@@ -4,6 +4,8 @@ part 'pomodoro.store.g.dart';
 
 class PomodoroStore = _PomodoroStore with _$PomodoroStore;
 
+enum TipoIntervalo { TRABALHO, DESCANSO }
+
 abstract class _PomodoroStore with Store {
   @observable
   bool iniciado = false;
@@ -19,6 +21,9 @@ abstract class _PomodoroStore with Store {
 
   @observable
   int tempoDescanso = 1;
+
+  @observable
+  TipoIntervalo tipoIntervalo = TipoIntervalo.DESCANSO;
 
   @action
   void iniciar() {
@@ -54,4 +59,8 @@ abstract class _PomodoroStore with Store {
   void decrementarTempoDescanso() {
     tempoDescanso--;
   }
+
+  bool estaTrabalhando() => tipoIntervalo == TipoIntervalo.TRABALHO;
+
+  bool estaDescansando() => tipoIntervalo == TipoIntervalo.TRABALHO;
 }
