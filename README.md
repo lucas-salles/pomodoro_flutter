@@ -1,16 +1,38 @@
-# pomodoro_flutter
+# Pomodoro Flutter
 
-A new Flutter project.
+Um sistema para gerenciamento de tempo e produtividade. Essa aplicação faz uso da técnida de Pomodoro para que o usuário consiga gerenciar o seu trabalho ou estudo.
 
-## Getting Started
+## Tecnologias
 
-This project is a starting point for a Flutter application.
+As seguintes tecnologias e pacotes foram usadas na construção do projeto:
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter](https://flutter.dev/)
+- [MobX](https://mobx.netlify.app/)
+- [mobx](https://pub.dev/packages/mobx)
+- [flutter_mobx](https://pub.dev/packages/flutter_mobx)
+- [provider](https://pub.dev/packages/provider)
+- [build_runner](https://pub.dev/packages/build_runner)
+- [mobx_codegen](https://pub.dev/packages/mobx_codegen)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Como Usar
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+ - Clone esse repositório:
+ $ git clone https://github.com/lucas-salles/pomodoro-flutter.git
+
+ - Entre no diretório:
+ $ cd pomodoro-flutter
+
+ - Instale as dependências:
+ $ flutter pub get
+
+ - Inicie o app: 
+ $ flutter run
+ ```
+
+<div>
+  <img src="screenshots/trabalhar-play.png" width="150" />
+  <img src="screenshots/trabalhar-stop.png" width="150" />
+  <img src="screenshots/descansar-play.png" width="150" />
+  <img src="screenshots/descansar-stop.png" width="150" />
+</div>
